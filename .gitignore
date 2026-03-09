@@ -1,0 +1,6 @@
+# Ignorando arquivos compilados
+*.class
+
+# Ignorando pastas de build e dependências locais
+bin/
+target/

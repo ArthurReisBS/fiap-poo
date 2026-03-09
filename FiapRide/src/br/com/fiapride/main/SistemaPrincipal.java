@@ -29,26 +29,17 @@ public class SistemaPrincipal {
 		caderno4.marcaPagina = 33;
 		caderno4.totalFolhas = 295;
 		
-		// Printando esses objetos e suas características:
+		// Printando esses objetos e suas características, e testando os novos métodos em cada um:
 		System.out.println("---- Cadernos ----");
 		System.out.println("Caderno: " + caderno1.tituloCapa + " | Marca página: " + caderno1.marcaPagina + " | Total de folhas: " + caderno1.totalFolhas);
+		caderno1.arrancarFolhas(3400);
 		System.out.println("Caderno: " + caderno2.tituloCapa + " | Marca página: " + caderno2.marcaPagina + " | Total de folhas: " + caderno2.totalFolhas);
+		caderno2.mudarMarcaPagina(5400);
 		System.out.println("Caderno: " + caderno3.tituloCapa + " | Marca página: " + caderno3.marcaPagina + " | Total de folhas: " + caderno3.totalFolhas);
-		System.out.println("Caderno: " + caderno4.tituloCapa + " | Marca página: " + caderno4.marcaPagina + " | Total de folhas: " + caderno4.totalFolhas);
-		
-		// Testando as funções:
-		caderno1.arrancarFolhas(34);
 		caderno3.arrancarFolhas(67);
-		
-		caderno2.mudarMarcaPagina(54);
+		System.out.println("Caderno: " + caderno4.tituloCapa + " | Marca página: " + caderno4.marcaPagina + " | Total de folhas: " + caderno4.totalFolhas);
 		caderno4.mudarMarcaPagina(123);
 		
-		System.out.println("---- Modificações ----");
-		System.out.println("Caderno: " + caderno1.tituloCapa + " | Marca página: " + caderno1.marcaPagina + " | Total de folhas: " + caderno1.totalFolhas);
-		System.out.println("Caderno: " + caderno2.tituloCapa + " | Marca página: " + caderno2.marcaPagina + " | Total de folhas: " + caderno2.totalFolhas);
-		System.out.println("Caderno: " + caderno3.tituloCapa + " | Marca página: " + caderno3.marcaPagina + " | Total de folhas: " + caderno3.totalFolhas);
-		System.out.println("Caderno: " + caderno4.tituloCapa + " | Marca página: " + caderno4.marcaPagina + " | Total de folhas: " + caderno4.totalFolhas);
-
 	}
 
 }

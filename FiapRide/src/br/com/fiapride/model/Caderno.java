@@ -6,11 +6,25 @@ public class Caderno {
 	public int marcaPagina;
 	public int totalFolhas;
 	
-	public int arrancarFolhas(int paginasArrancadas) {
-		return this.totalFolhas = this.totalFolhas - paginasArrancadas;
+	// Métodos:
+	public void arrancarFolhas(int paginasArrancadas) {
+		if(totalFolhas < paginasArrancadas) {
+			System.out.println("Não tem folhas o suficiente para arrancar.");
+		
+			return;
+		}
+		this.totalFolhas = this.totalFolhas - paginasArrancadas;
+		
+		System.out.println("Você arrancou o total de " + this.totalFolhas + " Folhas deste caderno");
 	}
 	
-	public int mudarMarcaPagina(int novaPaginaMarcada) {
-		return this.marcaPagina = novaPaginaMarcada;
+	public void mudarMarcaPagina(int novaPaginaMarcada) {
+		if(totalFolhas < novaPaginaMarcada) {
+			System.out.println("Essa página não existe.");
+		
+			return;
+		}
+		
+		System.out.println("Você botou o marca-página na folha " + novaPaginaMarcada);
 	}
 }
