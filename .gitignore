@@ -1,6 +1,10 @@
 # Ignorando arquivos compilados
 *.class
 
+# Ignorando arquivos de IDEs
+FiapRide/.settings/
+*.classpath
+*.project
+
 # Ignorando pastas de build e dependências locais
-bin/
-target/
+FiapRide/bin/
