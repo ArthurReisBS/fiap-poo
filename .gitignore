@@ -2,9 +2,9 @@
 *.class
 
 # Ignorando arquivos de IDEs
-FiapRide/.settings/
+*.settings/
 *.classpath
 *.project
 
 # Ignorando pastas de build e dependências locais
-FiapRide/bin/
+*bin/
