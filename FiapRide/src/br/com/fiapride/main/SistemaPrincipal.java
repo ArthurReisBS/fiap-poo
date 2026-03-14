@@ -21,10 +21,10 @@ public class SistemaPrincipal {
 		
 		// Informações dos passageiros:
 		System.out.println("\n--- Sistema FiapRide ---");
-		System.out.println("Passageiro: " + passageiroID01.nome + " | Saldo: R$ " + passageiroID01.saldo + " | CPF: " + passageiroID01.cpf);
-		System.out.println("Passageiro: " + passageiroID02.nome + " | Saldo: R$ " + passageiroID02.saldo + " | CPF: " + passageiroID02.cpf);
-		System.out.println("Passageiro: " + passageiroID03.nome + " | Saldo: R$ " + passageiroID03.saldo + " | CPF: " + passageiroID03.cpf);
-		System.out.println("Passageiro: " + passageiroID04.nome + " | Saldo: R$ " + passageiroID04.saldo + " | CPF: " + passageiroID04.cpf);
+		System.out.println("Passageiro: " + passageiroID01.getNome() + " | Saldo: R$ " + passageiroID01.getSaldo() + " | CPF: " + passageiroID01.getCpf());
+		System.out.println("Passageiro: " + passageiroID02.getNome() + " | Saldo: R$ " + passageiroID02.getSaldo() + " | CPF: " + passageiroID02.getCpf());
+		System.out.println("Passageiro: " + passageiroID03.getNome() + " | Saldo: R$ " + passageiroID03.getSaldo() + " | CPF: " + passageiroID03.getCpf());
+		System.out.println("Passageiro: " + passageiroID04.getNome() + " | Saldo: R$ " + passageiroID04.getSaldo() + " | CPF: " + passageiroID04.getCpf());
 	
 		// Pagando as viagens:
 		double passagem = 449.99;
