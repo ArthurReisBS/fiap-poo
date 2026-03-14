@@ -6,6 +6,13 @@ public class Caderno {
 	public int marcaPagina;
 	public int totalFolhas;
 	
+	// Inicialização dos Cadernos:
+	public Caderno(String tituloCapa, int marcaPagina, int totalFolhas) {
+		this.tituloCapa = tituloCapa;
+		this.marcaPagina = marcaPagina;
+		this.totalFolhas = totalFolhas;
+	}
+	
 	// Métodos:
 	public void arrancarFolhas(int paginasArrancadas) {
 		if(totalFolhas < paginasArrancadas) {
@@ -28,3 +35,4 @@ public class Caderno {
 		System.out.println("Você botou o marca-página na folha " + novaPaginaMarcada);
 	}
 }
+

@@ -1,45 +1,38 @@
 package br.com.fiapride.main;
 
 // Imporatando a classe:
-import br.com.fiapride.model.Caderno;
+import br.com.fiapride.model.Passageiro;
 
 public class SistemaPrincipal {
 
 	public static void main(String[] args) {
-		// O comando "new" aloca memória para um novo Objeto no programa.
+		// Alocando a memória para os passagerios:
+		Passageiro passageiroID01 = new Passageiro("Marie Curie", "123.456.789-01");
+		Passageiro passageiroID02 = new Passageiro("Albert Einstein", "234.567.890-12");
+		Passageiro passageiroID03 = new Passageiro("Ada Lovelace", "345.678.901-23");
+		Passageiro passageiroID04 = new Passageiro("Isaac Newton", "456.789.012-34");
 		
-		// Criando alguns Objetos da classe Caderno:
-		Caderno caderno1 = new Caderno();
-		caderno1.tituloCapa = "Uma Jornada no Escuro";
-		caderno1.marcaPagina = 418;
-		caderno1.totalFolhas = 543;
+		// Recargas:
+		System.out.printf("\n--- Adicionando saldo a todos os passageiros: ---\n");
+		passageiroID01.adicionarSaldo(1934.66);
+		passageiroID02.adicionarSaldo(1955.76);
+		passageiroID03.adicionarSaldo(1852.36);
+		passageiroID04.adicionarSaldo(1727.84);
 		
-		Caderno caderno2 = new Caderno();
-		caderno2.tituloCapa = "Caderno de Estudos - Fiap";
-		caderno2.marcaPagina = 19;
-		caderno2.totalFolhas = 246;
+		// Informações dos passageiros:
+		System.out.println("\n--- Sistema FiapRide ---");
+		System.out.println("Passageiro: " + passageiroID01.nome + " | Saldo: R$ " + passageiroID01.saldo + " | CPF: " + passageiroID01.cpf);
+		System.out.println("Passageiro: " + passageiroID02.nome + " | Saldo: R$ " + passageiroID02.saldo + " | CPF: " + passageiroID02.cpf);
+		System.out.println("Passageiro: " + passageiroID03.nome + " | Saldo: R$ " + passageiroID03.saldo + " | CPF: " + passageiroID03.cpf);
+		System.out.println("Passageiro: " + passageiroID04.nome + " | Saldo: R$ " + passageiroID04.saldo + " | CPF: " + passageiroID04.cpf);
+	
+		// Pagando as viagens:
+		double passagem = 449.99;
 		
-		Caderno caderno3 = new Caderno();
-		caderno3.tituloCapa = "Caderno de Desenhos";
-		caderno3.marcaPagina = 18;
-		caderno3.totalFolhas = 342;
-		
-		Caderno caderno4 = new Caderno();
-		caderno4.tituloCapa = "Diario";
-		caderno4.marcaPagina = 33;
-		caderno4.totalFolhas = 295;
-		
-		// Printando esses objetos e suas características, e testando os novos métodos em cada um:
-		System.out.println("---- Cadernos ----");
-		System.out.println("Caderno: " + caderno1.tituloCapa + " | Marca página: " + caderno1.marcaPagina + " | Total de folhas: " + caderno1.totalFolhas);
-		caderno1.arrancarFolhas(3400);
-		System.out.println("Caderno: " + caderno2.tituloCapa + " | Marca página: " + caderno2.marcaPagina + " | Total de folhas: " + caderno2.totalFolhas);
-		caderno2.mudarMarcaPagina(5400);
-		System.out.println("Caderno: " + caderno3.tituloCapa + " | Marca página: " + caderno3.marcaPagina + " | Total de folhas: " + caderno3.totalFolhas);
-		caderno3.arrancarFolhas(67);
-		System.out.println("Caderno: " + caderno4.tituloCapa + " | Marca página: " + caderno4.marcaPagina + " | Total de folhas: " + caderno4.totalFolhas);
-		caderno4.mudarMarcaPagina(123);
-		
+		System.out.printf("\n--- Passageiros pagando suas respectivas viagens: ---\n");
+		passageiroID01.pagarViagem(passagem);
+		passageiroID02.pagarViagem(passagem);
+		passageiroID03.pagarViagem(passagem);
+		passageiroID04.pagarViagem(passagem);
 	}
-
 }
