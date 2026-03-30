@@ -1,4 +1,5 @@
 package br.com.fiapride.main;
+import java.util.Scanner;
 
 // Imporatando a classe:
 import br.com.fiapride.model.Caderno;
@@ -30,6 +31,9 @@ public class TesteCaderno {
 		System.out.println("Caderno: " + cadernoID04.getTituloCapa() + " | Marca página: " + cadernoID04.getMarcaPagina() + " | Total de folhas: " + cadernoID04.getTotalFolhas());
 		cadernoID04.mudarMarcaPagina(123);
 		
+		
+		// while (true) {
+			
 	}
 
 }

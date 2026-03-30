@@ -2,6 +2,7 @@ package br.com.fiapride.main;
 
 // Imporatando a classe:
 import br.com.fiapride.model.Passageiro;
+import br.com.fiapride.model.Veiculo;
 
 public class SistemaPrincipal {
 
@@ -11,6 +12,10 @@ public class SistemaPrincipal {
 		Passageiro passageiroID02 = new Passageiro("Albert Einstein", "234.567.890-12");
 		Passageiro passageiroID03 = new Passageiro("Ada Lovelace", "345.678.901-23");
 		Passageiro passageiroID04 = new Passageiro("Isaac Newton", "456.789.012-34");
+		
+		// Alocando a memória para os veículos:
+		Veiculo carroID01 = new Veiculo("ABC-1234", "Toyota Corolla");
+		Veiculo carroID02 = new Veiculo("DEF-5678", "Fiat Uno");
 		
 		// Recargas:
 		System.out.printf("\n--- Adicionando saldo a todos os passageiros: ---\n");
@@ -34,5 +39,7 @@ public class SistemaPrincipal {
 		passageiroID02.pagarViagem(passagem);
 		passageiroID03.pagarViagem(passagem);
 		passageiroID04.pagarViagem(passagem);
+		
+		
 	}
 }
