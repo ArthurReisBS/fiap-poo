@@ -7,11 +7,16 @@ public class Caderno {
 	private int marcaPagina;
 	private int totalFolhas;
 	
+	// Atributos de associação:
+	private Autor escritor;
+	
 	// Inicialização dos Cadernos:
-	public Caderno(String tituloCapa, int marcaPagina, int totalFolhas) {
+	public Caderno(String tituloCapa, int marcaPagina, int totalFolhas, Autor escritor) {
 		this.setTituloCapa(tituloCapa);
 		this.setMarcaPagina(marcaPagina);
 		this.setTotalFolhas(totalFolhas);
+		
+		this.escritor = escritor;
 	}
 	
 	// Setters:
@@ -70,6 +75,18 @@ public class Caderno {
 		}
 		
 		System.out.println("Você botou o marca-página na folha " + novaPaginaMarcada);
+	}
+	
+	public void exibirResumo() {
+		System.out.println("\n --- RESUMO DO CADERNO ---");
+		System.out.println("Caderno: "+ this.tituloCapa);
+		System.out.println("Folhas: "+ this.totalFolhas);
+		
+		// Navegando entre objetos:
+		System.out.println("Nome do escritor: "+ this.escritor.getNome());
+		System.out.println("Nacionalidade do escritor: "+ this.escritor.getNacionalidade());
+		System.out.println("Ano de nascimento do escritor: "+ this.escritor.getAnoNascimento());
+		System.out.println("-----------------------\n");
 	}
 
 }
