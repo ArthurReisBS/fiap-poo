@@ -3,10 +3,13 @@
 
 ### Índice dos tópicos:
 
-1 [Sobre o projeto](#sobre-o-projeto)
-2 [Aulas](#aulas)
-3 [Explicações sobre as Classes](#explicações-sobre-as-classes) 
-4 [Erros corrigidos](#erros-corrigidos)
+1. [Sobre o projeto](#sobre-o-projeto)
+
+2. [Aulas](#aulas)
+
+3. [Explicações sobre as Classes](#explicações-sobre-as-classes) 
+
+4. [Erros corrigidos](#erros-corrigidos)
 
 ### Sobre o projeto:
 Esse repositório diz respeito às aulas dadas na FIAP, no segundo ano de Ciência da Computação.
