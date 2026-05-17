@@ -109,6 +109,7 @@ getTotalFolhas
 São as classes filhas da classe Caderno, elas herdam tudo sobre os cadernos e cada uma tem um atributo adicional.
 
 HQ - Atributo adicional -> isColorido: serve para saber se a HQ é ou não é colorida.
+
 LivroContos - Atributo adicional -> quantidadeDeContos: serve para indicar o número total de contos do livro.
 
 ### Autor:
@@ -170,6 +171,7 @@ São as classes filhas do Veiculo, utilizadas como exemplo na aula do professor.
 Ambas herdam tudo de Veiculo, e cada uma tem um atributo adicional.
 
 Moto - Atributo adicional -> isEletrica: serve para indicar se a moto é ou não é elétrica.
+
 Carro - Atributo adicional -> capacidadePassageiros: serve para indicar a quantidade de passageiros que cabem no carro.
 
 ### Viagem:
