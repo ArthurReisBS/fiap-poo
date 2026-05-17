@@ -62,11 +62,21 @@ Aprendemos que classes podem utilizar outros objetos dentro de si mesma, por exe
 - Commits relacionados:
 Atualizando (e praticamente adicionando) classe Autor, e classe Viagem
 
+### Aula 6 - A Árvore Genealógica - Herança (Generalização)
+- Sobre a aula:
+Aprendemos sobre heranças, o exemplo dado pelo professor foi que Classes como Moto e Carro são ambos veículos, então eles podem herdar os atributos da classe Veiculo, melhorando assim a legibilidade do código, a manutenção e otimização do sistema.
+
+- Commits relacionados:
+Adicionando Herança
+
 ---
 # Explicações sobre as Classes
 Este tópico possui dois caminhos, "Minhas Classes" que se referem a classes criadas por mim, e "Classes das Aulas" que se referem a classes dadas em aula.
 
 ## Minhas Classes
+
+### Astah:
+![Imagem do astah](./static/herancas-eu.png).
 
 ### Caderno:
 
@@ -94,6 +104,13 @@ getTituloCapa
 getMarcaPagina
 getTotalFolhas
 
+### HQ e LivroContos:
+
+São as classes filhas da classe Caderno, elas herdam tudo sobre os cadernos e cada uma tem um atributo adicional.
+
+HQ - Atributo adicional -> isColorido: serve para saber se a HQ é ou não é colorida.
+LivroContos - Atributo adicional -> quantidadeDeContos: serve para indicar o número total de contos do livro.
+
 ### Autor:
 
 A classe que foi criada para o aprendizado da aula 5, sobre relacionamentos entre Objetos.
@@ -111,6 +128,9 @@ adicionarAutoriaDeCadernos (adiciona quantos cadernos o autor possui em sua auto
 Tem também os getters de todos os atributos, servindo para mostrar o valor deles.
 
 ## Classes das aulas
+
+### Astah:
+![Imagem do astah](./static/herancas-professor.png).
 
 ### Passageiro:
 
@@ -142,6 +162,15 @@ setPlaca (único setter)
 
 getPlaca
 getModelo
+
+### Moto e carro:
+
+São as classes filhas do Veiculo, utilizadas como exemplo na aula do professor.
+
+Ambas herdam tudo de Veiculo, e cada uma tem um atributo adicional.
+
+Moto - Atributo adicional -> isEletrica: serve para indicar se a moto é ou não é elétrica.
+Carro - Atributo adicional -> capacidadePassageiros: serve para indicar a quantidade de passageiros que cabem no carro.
 
 ### Viagem:
 
